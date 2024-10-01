@@ -1,11 +1,18 @@
-apiversion: apps/v1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: client-deployment
 spec:
-  relica: 3
+  replicas: 3
   selector:
     matchLabels:
       app: client
   template:
-  
+    metadata:
+      name: client-pods
+      labels:
+        app: client
+    spec:
+      containers:
+      - name: client
+        image: imsuriyapi/todo-app:v4

@@ -1,4 +1,5 @@
-kubectl apply -f .\sample-pod.yml
-kubectl get all
+kubectl get all ดูทั้งหมด
+kubectl apply -f (ชื่อไฟล์) ใช้สร้าง
 kubectl get pods
 kubectl logs client-pods
+kubectl delete all --all ลบทั้งหมด
