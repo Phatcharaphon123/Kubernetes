@@ -1,0 +1,4 @@
+kubectl apply -f .\sample-pod.yml
+kubectl get all
+kubectl get pods
+kubectl logs client-pods
