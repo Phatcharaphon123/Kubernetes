@@ -3,4 +3,8 @@ kubectl apply -f (ชื่อไฟล์) ใช้สร้าง
 kubectl get pods
 kubectl logs client-pods
 kubectl delete all --all ลบทั้งหมด
- kubectl apply -f . อ่านไฟล์ทั้งหมดแล้ว create เลย
+kubectl apply -f . อ่านไฟล์ทั้งหมดแล้ว create เลย
+
+http://localhost:30001/
+http://localhost:30002/api/health
+http://localhost:30002/api/todo
